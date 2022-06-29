@@ -1,25 +1,70 @@
 // Kung Fu Panda Image Gallery
 
 // Variables for html elements
+let goBtn = document.getElementById("go-btn");
+let menuSelect = document.getElementById("menu-select");
 let container = document.getElementById("container");
 
-// Array of Image Names
-let imgNames = [
-  "po",
-  "shifu",
-  "oogway",
-  "tigress",
-  "crane",
-  "mantis",
-  "monkey",
-  "viper",
-  "mr-ping",
-  "tai-lung",
-];
+// Initialize Array of Character Objects from json file
+let characterData = [];
+fetch("character-data.json")
+  .then((res) => res.json())
+  .then((data) => {
+    characterData = data;
+  });
+
+// Event Listener on Go Button
+goBtn.addEventListener("click", goBtnClicked);
+
+// Process Go Button Click
+function goBtnClicked() {
+  // Get Menu Selection
+  let selection = menuSelect.value;
+
+  // Process Menu Selection
+  if (selection === "display-all") {
+    displayAll();
+  } else if (selection === "display-group") {
+    displayGroup();
+  }
+}
+
+// Display All Characters
+function displayAll() {
+  let htmlStr = "";
+  for (let i = 0; i < characterData.length; i++) {
+    htmlStr += characterHTMLStr(characterData[i]);
+  }
+  container.innerHTML = htmlStr;
+}
+
+function displayGroup() {
+  // Prompt user for group to display
+  let searchGroup = prompt("Please enter group to display: ");
+
+  // Display all characters in provided group
+  let htmlStr = "";
+  for (let i = 0; i < characterData.length; i++) {
+    if (characterData[i].group === searchGroup) {
+      htmlStr += characterHTMLStr(characterData[i]);
+    }
+  }
+  container.innerHTML = htmlStr;
+}
+
+// Return html string of provided character
+function characterHTMLStr(char) {
+  return `
+    <div>
+      <img src="img/${char.imgName}" />
+      <h3>${char.name}</h3>
+      <p>${char.quote}</p>
+    </div>`;
+}
 
 // Add img elements to container element
-let htmlStr = "";
-for (let i = 0; i < imgNames.length; i++) {
-  htmlStr += `<div><img src="img/${imgNames[i]}.png" /></div>`;
-}
-container.innerHTML = htmlStr;
+// let htmlStr = "";
+// for (let i = 0; i < imgNames.length; i++) {
+//   htmlStr += `<div><img src="img/${imgNames[i]}.png" /></div>`;
+// }
+// container.innerHTML = htmlStr;

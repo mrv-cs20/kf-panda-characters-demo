@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Po",
+    "quote": "Buddy, I am the Dragon Warrior.",
+    "imgName": "po.png",
+    "group": "Dragon Warrior"
+  },
+  {
+    "name": "Shifu",
+    "quote": "There is now a Level Zero.",
+    "imgName": "shifu.png",
+    "group": "Master"
+  },
+  {
+    "name": "Oogway",
+    "quote": "Yesterday is history, tomorrow is a mystery, but today is a gift.  That is why it is called the present.",
+    "imgName": "oogway.png",
+    "group": "Master"
+  },
+  {
+    "name": "Tigress",
+    "quote": "That was pretty hardcore!",
+    "imgName": "tigress.png",
+    "group": "Furious Five"
+  },
+  {
+    "name": "Mantis",
+    "quote": "Fear the bug!",
+    "imgName": "mantis.png",
+    "group": "Furious Five"
+  },
+  {
+    "name": "Monkey",
+    "quote": "We should hang out!",
+    "imgName": "monkey.png",
+    "group": "Furious Five"
+  },
+  {
+    "name": "Crane",
+    "quote": "You can chain my body, but you will never chain my warrior spirit!",
+    "imgName": "crane.png",
+    "group": "Furious Five"
+  },
+  {
+    "name": "Viper",
+    "quote": "I don't need to bite to fight!",
+    "imgName": "viper.png",
+    "group": "Furious Five"
+  },
+  {
+    "name": "Mr. Ping",
+    "quote": "We are noodle folk. Broth runs through our veins!",
+    "imgName": "mr-ping.png",
+    "group": "Other"
+  },
+  {
+    "name": "Tai Lung",
+    "quote": "Fly back there and tell them... the real Dragon Warrior is coming home.",
+    "imgName": "tai-lung.png",
+    "group": "Villains"
+  }
+]
