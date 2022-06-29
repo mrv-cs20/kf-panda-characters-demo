@@ -38,6 +38,7 @@ function displayAll() {
   container.innerHTML = htmlStr;
 }
 
+// Display Group of Characters
 function displayGroup() {
   // Prompt user for group to display
   let searchGroup = prompt("Please enter group to display: ");
@@ -61,10 +62,3 @@ function characterHTMLStr(char) {
       <p>${char.quote}</p>
     </div>`;
 }
-
-// Add img elements to container element
-// let htmlStr = "";
-// for (let i = 0; i < imgNames.length; i++) {
-//   htmlStr += `<div><img src="img/${imgNames[i]}.png" /></div>`;
-// }
-// container.innerHTML = htmlStr;
