@@ -9,13 +9,25 @@
     "name": "Shifu",
     "quote": "There is now a Level Zero.",
     "imgName": "shifu.png",
-    "group": "Master"
+    "group": "Masters"
   },
   {
     "name": "Oogway",
     "quote": "Yesterday is history, tomorrow is a mystery, but today is a gift.  That is why it is called the present.",
     "imgName": "oogway.png",
-    "group": "Master"
+    "group": "Masters"
+  },
+  {
+    "name": "Master Croc",
+    "quote": "Vengeance is served!",
+    "imgName": "croc.png",
+    "group": "Masters"
+  },
+  {
+    "name": "Master Storming Ox",
+    "quote": "You insolent fool!",
+    "imgName": "storming-ox.png",
+    "group": "Masters"
   },
   {
     "name": "Tigress",
@@ -48,15 +60,39 @@
     "group": "Furious Five"
   },
   {
+    "name": "Tai Lung",
+    "quote": "Fly back there and tell them... the real Dragon Warrior is coming home.",
+    "imgName": "tai-lung.png",
+    "group": "Villains"
+  },
+  {
+    "name": "Shen",
+    "quote": "The Year of the Peacock begins now!",
+    "imgName": "shen.png",
+    "group": "Villains"
+  },
+  {
+    "name": "Kai",
+    "quote": "Kai has RETURNED!",
+    "imgName": "kai.png",
+    "group": "Villains"
+  },
+  {
+    "name": "Boss Wolf",
+    "quote": "If you mess with the wolf, you get the fangs.",
+    "imgName": "boss-wolf.png",
+    "group": "Villains"
+  },
+  {
     "name": "Mr. Ping",
     "quote": "We are noodle folk. Broth runs through our veins!",
     "imgName": "mr-ping.png",
     "group": "Other"
   },
   {
-    "name": "Tai Lung",
-    "quote": "Fly back there and tell them... the real Dragon Warrior is coming home.",
-    "imgName": "tai-lung.png",
-    "group": "Villains"
+    "name": "Soothsayer",
+    "quote": "Even with his poor eyesight, he can see the truth. Why is it that you cannot?",
+    "imgName": "soothsayer.png",
+    "group": "Other"
   }
 ]
